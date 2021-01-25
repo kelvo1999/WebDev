@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.center .sun{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 70%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgb(189, 201, 21);
+    box-shadow: 0 0 15px rgba(220, 230, 90, 0.5),
+                0 0 30px rgba(220, 230, 90, 0.5),
+                0 0 45px rgba(220, 230, 90, 0.5),
+                0 0 65px rgba(220, 230, 90, 0.5),
+                0 0 15px rgba(220, 230, 90, 0.5);
+}
+
+.center .sun .earth{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+        width: 200px;
+    height: 2px;
+    /*background: #ff0000;*/
+    transform-origin: left;
+    animation: rotate 30s linear infinite;
+}
+
+.center .sun .mars{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+        width: 350px;
+    height: 2px;
+    /*background: #ff0000;*/
+    transform-origin: left;
+    animation: rotate 50s linear infinite;
+}
+
+.center .sun .earth:before{
+    content: url(e.ico);
+    position: absolute;
+    top: -25px;
+    right: 0%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(15, 101, 151);
+    box-shadow: 0 0 15px rgba(0, 155, 255, 0.5),
+    0 0 30px rgba(0, 155, 255, 0.5),
+    0 0 45px rgba(0, 155, 255, 0.5),
+    0 0 65px rgba(0, 155, 255, 0.5),
+    0 0 15px rgba(0, 155, 255, 0.5);
+    animation: rotate 10s linear infinite;
+}
+
+.center .sun .mars:before{
+    content: "";
+    position: absolute;
+    top: -25px;
+    right: 0%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(30, 255, 0);
+    box-shadow: 0 0 15px rgba(0, 155, 255, 0.5),
+    0 0 30px rgba(30, 255, 0, 0.5),
+    0 0 45px rgba(30, 255, 0, 0.5),
+    0 0 65px rgba(30, 255, 0, 0.5),
+    0 0 15px rgba(30, 255, 0, 0.5);
+    animation: rotate 20s linear infinite;
+}
+
+.center .sun .earth .moon{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    width: 60px;
+    height: 1px;
+    /*background: #f00;*/
+    transform-origin: right;
+    
+    animation: rotate 5s linear infinite;
+
+}
+ .center .sun .earth .moon:before{
+     content: '';
+     position: absolute;
+     top: -50px;
+    right: 0%;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     background: rgb(185, 128, 75);
+     box-shadow: rgba(108, 207, 186, 0.5),
+     0 0 30px rgba(250, 242, 237, 0.5),
+    0 0 45px rgba(250, 242, 237, 0.5),
+    0 0 65px rgba(250, 242, 237, 0.5),
+    0 0 15px rgba(250, 242, 237, 0.5);
+ }
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+

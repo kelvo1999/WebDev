@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Theme</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+    <h1>Short Story</h1>
+    <p>Once upon a time, in a village known to many as <i>Ikuywa</i>, lived one old grizzled man. He was
+    always happy despite being old and beat </p>
+    <p>Nobody knew anything about him and since he was poor, Nobody dared to ask him about his whereabouts</p>
+    <p>That village had a lot of rich people who had compounds enclosed by electric fences and high walls
+        The old man never bothered about his security since he thought nobody would even bother him since he had noothing to offer
+
+    </p>
+    <p>On this day, a young man, who seemingly had came to visit a relative, passed near the old man's crib
+    He had heard stories that old men had entertaining stories and he also wanted to have a glimpse of it.
+    He knocked gently on the semi open door and a frisky but joyous voice ushered him in.
+    He entered in happily and sat on the floor ready to listen to the story. Unfortunately the old
+    man closed the door and I being the paparazzi did not get a glimpse.
+    </p>
+    </section>
+
+    <ul>
+        <li>
+            <span>Dark</span>
+            <span>Light</span>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('ul').click(function () {
+            $('ul').toggleClass('active')
+            $('section').toggleClass('dark')
+        })
+    })
+    </script>
+</body>
+</html>
