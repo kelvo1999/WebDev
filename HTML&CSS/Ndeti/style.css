@@ -27,7 +27,7 @@ ul li{
 }
 ul li a{
 	text-decoration: none;
-	color: white;
+	color: rgb(155, 45, 45);
 	display: block;
 	cursor: pointer;
 }
