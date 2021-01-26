@@ -1,0 +1,68 @@
+
+<!Doctype>
+ <html>
+<head>
+<title>Sign Up</title>
+<link rel="stylesheet" href="styles.css" >
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1 >Online Tutors Club</h1>
+<p class="title"><i>Together we learn together we gain</i></p>
+<ul>
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="login.html">Sign In</a>
+</li>
+
+<li>
+<a href="aboutus.html">About Us</a>
+</li>
+
+<li>
+<a href="contact.html">Contact</a>
+</li>
+
+<li>
+<a href="doc.html">Documentations</a>
+</li>
+
+<li>
+<a href="links.html">YouTube Links</a>
+</li>
+
+
+</ul>
+<br/><br/>
+<div class="container">
+<h2 style="color: black;">Sign Up</h2>
+        <p style="color: black;">Please fill this form to create an account.</p>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div >
+                <label>Username</label>
+                <input type="text" name="username" class="form-control" placeholder="Username" value="">
+                
+            </div>    
+            <div <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>>
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" placeholder="Password" value="">
+                
+            </div>
+            <div <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>>
+                <label>Confirm Password</label>
+                <input type="password" name="confirm_password" class="form-control" placeholder="confirm password" value="">
+                
+            </div>
+            <div >
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="reset" class="btn btn-default" value="Reset">
+            </div>
+
+            <p style="color: black;">Already have an account? <a href="login.html">Sign In</a>.</p>
+        </form>
+</div> 
+</body>
+</html>
