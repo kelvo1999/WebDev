@@ -48,3 +48,33 @@ footer{
  position: relative;
  left: 20px;   
 }
+
+.slider{
+	width: 1000px;
+	height: 500px;
+	background: url(3.jpg); background-repeat: no-repeat;background-size: cover;
+	margin: 100px auto;
+	animation: slide 20s infinite;
+	}
+
+	.media{
+		float: right;
+	}
+
+@keyframes slide{
+	25%{
+		background: url(2.jpg);background-repeat: no-repeat;background-size: cover;
+	}
+
+	50%{
+		background: url(lib.jpeg);background-repeat: no-repeat;background-size: stretch;
+	}
+
+	75%{
+		background: url(graduates.png);background-repeat: no-repeat;background-size: stretch;
+	}
+
+	100%{
+		background: url(4.jpg);background-size: stretch;
+	}
+}
