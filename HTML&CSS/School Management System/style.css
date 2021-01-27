@@ -27,7 +27,7 @@ ul{
 
 ul li{
     float: left;
-	width: 200px;
+	width: 193px;
 	height: 40px;
 	background-color: whitesmoke;
 	opacity:.8;
@@ -129,7 +129,7 @@ top:10%;
 left: 50%;
 transform: translate(-50%,20%);
 color: white;
-display: ;
+/*display: ;*/
 
 }
 .login-box #hl{
@@ -172,7 +172,7 @@ display: ;
 	margin: 12px;
 }
 
-}
+
 .aa{
 	width: 350px;
 	height: 1750px;
