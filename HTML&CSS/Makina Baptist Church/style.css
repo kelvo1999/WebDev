@@ -1,0 +1,66 @@
+body{
+    background-color: skyblue;
+}
+
+.header{
+    width: auto;
+    height: 100px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: overline;
+    top: 0%;
+    width: auto;
+}
+
+/*.img{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+*/
+
+.h1{
+    top: 0%;
+    text-align: center;
+    align-content: right;
+    left: 50%;
+}
+
+.img{
+    content: url(moon_PNG52.png);
+
+    width: 200px;
+    height: 200px;
+    top: -25px;
+    border-radius: 20%;
+    /*background: #ff0000;*/
+    /*transform-origin: right;*/
+    animation: rotate 30s linear infinite;
+}
+
+/*.img:before{
+    content: url(moon_PNG52.png);
+    /*position: absolute;
+    top: -25px;
+    right: 0%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   
+    animation: rotate 10s linear infinite;
+}
+*/
+
+@keyframes rotate{
+
+   0%{
+       transform: rotate(0deg);
+   }
+   
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
