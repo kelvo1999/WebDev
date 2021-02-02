@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f0f0;
+    font-family: 'Lora', serif;
+}
+
+.services {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.services h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fc5185;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.services h1 span {
+    color: #fc5185;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.service {
+    display: inline-block;
+    width: calc(100% /3);
+    margin: 5px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.17), 0 4px 5px rgba(0, 0, 0, 0.29);
+    cursor: pointer;
+    transition: 0.4s;
+    background: #fff;
+}
+
+.service:hover {
+    background: #333333;
+    color: #fff;
+    transition-duration: 0.9s;
+}
+
+.service i {
+    color: #fc5185;
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+.service h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+
+.service p {
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+    .service {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .service {
+        width: 100%;
+    }
+}
