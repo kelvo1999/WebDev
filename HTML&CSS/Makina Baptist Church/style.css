@@ -110,9 +110,33 @@ ul li a:hover{
 ul li ol li{
 	display: none;
 	cursor: pointer;
-}
+} 
 ul li:hover ol li{
 	display: block;
 	cursor: pointer;
 }
+h2{
+    color: #ffffff;
+}
+.sunday{
+    /*position: relative;*/
+    
+    text-align: center;
+    
+}
+
+.sunday morning{
+    position: absolute;
+    top: 50%;
+    float: left;
+    color: #ffffff;
+}
+
+th{
+    color: #ffffff;
+    position: relative;
+    left: 100%;
+    font-size: 50px;
+}
+
 
