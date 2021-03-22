@@ -58,6 +58,22 @@
             background: #555;
             border-radius: 50%;
         }
+
+        #form.valid .indicator{
+            background: #0f0;
+            box-shadow: 0 0 5px #0f0,
+                    0 0 10px #0f0,
+                    0 0 20px #0f0,
+                    0 0 40px #0f0;
+        }
+
+        #form.invalid .indicator{
+            background: #f00;
+            box-shadow: 0 0 5px #f00
+                    0 0 10px #f00,
+                    0 0 20px #f00,
+                    0 0 40px #f00;
+        }
     </style>
 </head>
 <body>
@@ -65,7 +81,7 @@
         <h1>Subscribe</h1>
         <form action="#" id="form">
             <div class="inputbox">
-                <input type="text" id="email" placeholder="Enter your email">
+                <input type="text" id="email" placeholder="Enter your email" onkeyup="validate();">
                 <span class="indicator"></span>
             </div>
         </form>
@@ -73,7 +89,23 @@
     <script>
         function validate(){
             const form = document.getElementById('form');
-            const form = document.getElementById('form');
+            const email = document.getElementById('email').value;
+            const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+
+            if(email.match(pattern)){
+                form.classList.add('valid')
+                form.classList.remove('invalid')
+            } else{
+                form.classList.add('invalid')
+                form.classList.remove('valid')
+            }
+
+            if (email == "") {
+                form.classList.remove('invalid')
+                form.classList.remove('valid')
+                
+            }
+
         }
     </script>
 </body>
