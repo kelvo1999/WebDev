@@ -4,7 +4,41 @@ body{
     background: url(bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    animation: slide 20s infinite;
     
+}
+
+@keyframes slide{
+	25%{
+	background: url(bg.jpeg);
+	opacity:80%;
+	background-repeat: no-repeat;
+    background-size: cover;
+	}
+	
+	50%{
+	background: url(bg.jpeg);
+	opacity:60%;
+	background-repeat: no-repeat;
+    background-size: cover;
+	}
+	
+	75%{
+	background: url(bg.jpeg);
+	opacity:40%;
+	background-repeat: no-repeat;
+    background-size: cover;
+	}
+	
+	100%{
+	background: url(bg.jpeg);
+	opacity:20%;
+	background-repeat: no-repeat;
+    background-size: cover;
+	}
+
+
+
 }
 
 .center{

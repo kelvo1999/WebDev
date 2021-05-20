@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+section{
+    position: absolute;
+    background:#f0f8ff;
+    height: 1000px;
+    width: 100%;
+    display:block;
+    justify-content: center;
+    align-items:center;
+    
+
+}
+
+section.dark{
+    background: rgb(78, 76, 76);
+}
+
+
+section .lynn{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background:#fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius:16px;
+    display: block;
+    /*justify-content: center;
+    align-items:center;*/
+    left: 5%;
+    
+    
+}
+
+section.dark .lynn{
+    background:gray;
+    box-shadow: white;
+}
+
+section .lynn .content img{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    position: relative;
+    left: 20%;
+}
+section .lynn .content p{
+     display: block;
+    justify-content: left;
+    align-items:left;
+    flex-direction: column;
+    
+}
+
+section .lynn:hover{
+   
+ 
+     background-image: url('lynn.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+   
+}
+
+section .lynn.content:hover{
+  color: #ff0000;  
+}
+
+section .hopper{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background:#fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius:16px;
+    display: block;
+    /*justify-content: center;
+    align-items:center;*/
+    left: 35%;
+    
+    
+}
+
+section.dark .hopper{
+    background-color: gray;
+}
+
+section .hopper .content img{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    position: relative;
+    left: 20%;
+}
+section .hopper .content p{
+     display: block;
+    justify-content: left;
+    align-items:left;
+    flex-direction: column;
+    
+}
+
+section .hopper:hover{
+   
+ 
+     background-image: url('hopper.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+   
+}
+
+section .hopper.content:hover{
+  color: #ff0000;  
+}
+
+
+section .james{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background:#fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius:16px;
+    display: block;
+    /*justify-content: center;
+    align-items:center;*/
+    left: 65%;
+    
+    
+}
+
+section.dark .james{
+    background-color: gray;
+}
+
+section .james .content img{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    position: relative;
+    left: 20%;
+}
+section .james .content p{
+     display: block;
+    justify-content: left;
+    align-items:left;
+    flex-direction: column;
+    
+}
+
+section .james:hover{
+   
+ 
+     background-image: url('hopper.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+    
+}
+
+section .james.content:hover{
+  color: #ff0000;  
+}
+
+section .Walter{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background:#fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius:16px;
+    display: block;
+    /*justify-content: center;
+    align-items:center;*/
+    left: 5%;
+    top: 110%;
+    
+}
+
+section.dark .Walter{
+    background-color: gray;
+}
+
+section .Walter .content img{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    position: relative;
+    left: 20%;
+}
+section .Walter .content p{
+     display: block;
+    justify-content: left;
+    align-items:left;
+    flex-direction: column;
+    
+}
+
+section .Walter:hover{
+   
+ 
+     background-image: url('hopper.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+    
+}
+
+section .Walter.content:hover{
+  color: #ff0000;  
+}
+
+
+section .Jumba{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background:#fff;
+    box-shadow: 0 15px 25px rgba(202, 20, 20, 0.5);
+    border-radius:16px;
+    display: block;
+    /*justify-content: center;
+    align-items:center;*/
+    left: 35%;
+    top: 110%;
+    
+}
+
+section.dark .Jumba{
+    background-color: gray;
+}
+
+section .Jumba .content img{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    position: relative;
+    left: 20%;
+}
+section .Jumba .content p{
+     display: block;
+    justify-content: left;
+    align-items:left;
+    flex-direction: column;
+    
+}
+
+section .Jumba:hover{
+   
+ 
+     background-image: url('hopper.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+    
+    
+}
+
+section .Jumba.content:hover{
+  color: #ff0000;  
+}
+
+.toggle{
+    width: 25px;
+    height: 25px;
+    background-color: #e9f5ff;
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    border-radius: 60%;
+
+}
+
+section.dark .toggle{
+    background:#404852;
+}
+
+.toggle::before{
+    content: '\f186';
+    font-family: fontAwesome;
+    color: #2fa1ff;
+}
+
+section.dark.toggle:before{
+    content: '\f185';
+    
+}
+
